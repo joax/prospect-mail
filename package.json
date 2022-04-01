@@ -44,7 +44,7 @@
     "electron-settings": "^4.0.2"
   },
   "devDependencies": {
-    "electron": "^13.1.4",
+    "electron": "^18.0.1",
     "electron-builder": "^22.11.7"
   },
   "build": {
