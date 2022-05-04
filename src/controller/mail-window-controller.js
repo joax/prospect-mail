@@ -160,12 +160,13 @@ class MailWindowController {
 
                 let that = this
                 if (!showWindowFrame) {
-                    let a = childWindow.webContents.insertCSS(CssInjector.noFrame)
-                    a.then(() => {
+                    childWindow.webContents.insertCSS(CssInjector.noFrame)
+                    .then(() => {
                         childWindow.webContents.executeJavaScript(JsInjector.childWindow)
                             .then(() => {
-                                childWindow.webContents.on('new-window', this.openInBrowser)
-                                childWindow.show()
+                                console.log('Opening Child Window here...')
+                                childWindow.webContents.setWindowOpenHandler(this.openInBrowser)
+                                //childWindow.show()
                             })
                             .catch((errJS) => {
                                 console.log('Error JS Insertion:', errJS)        
@@ -195,7 +196,7 @@ class MailWindowController {
         })
 
         // Open the new window in external browser
-        this.win.webContents.on('new-window', this.openInBrowser)
+        this.win.webContents.setWindowOpenHandler(this.openInBrowser)
     }
 
     // Adds observer for the unread messages.
@@ -215,26 +216,28 @@ class MailWindowController {
         this.win.reload()
     }
 
-    openInBrowser(e, url, frameName, disposition, options) {
-        console.log('Open in browser: ' + url)//frameName,disposition,options)
+    openInBrowser({ url }) {
         if (new RegExp(deeplinkUrls.join('|')).test(url)) {
             // Default action - if the user wants to open mail in a new window - let them.
-            options.webPreferences.affinity = 'main-window';
+            return { action: 'allow' }
         }
         else if (new RegExp(outlookUrls.join('|')).test(url)) {
             // Open calendar, contacts and tasks in the same window
             e.preventDefault()
             this.loadURL(url)
+            return { action: 'deny' }
         }
         else if (url == "about:blank#blocked") {
             // Do nothing
             e.preventDefault()
             shell.openExternal("https://teams.microsoft.com/l/meeting/new")
+            return { action: 'deny' }
         }
         else {
             // Send everything else to the browser
             e.preventDefault()
             shell.openExternal(url)
+            return { action: 'deny' }
         }
     }
 
