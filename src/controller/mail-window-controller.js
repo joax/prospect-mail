@@ -164,9 +164,9 @@ class MailWindowController {
                     .then(() => {
                         childWindow.webContents.executeJavaScript(JsInjector.childWindow)
                             .then(() => {
-                                console.log('Opening Child Window here...')
+                                //console.log('Opening Child Window here...')
                                 childWindow.webContents.setWindowOpenHandler(this.openInBrowser)
-                                //childWindow.show()
+                                childWindow.show()
                             })
                             .catch((errJS) => {
                                 console.log('Error JS Insertion:', errJS)        
@@ -219,23 +219,30 @@ class MailWindowController {
     openInBrowser({ url }) {
         if (new RegExp(deeplinkUrls.join('|')).test(url)) {
             // Default action - if the user wants to open mail in a new window - let them.
-            return { action: 'allow' }
+            return { 
+                action: 'allow',
+                overrideBrowserWindowOptions: {
+                    frame: showWindowFrame || false,
+                    fullscreenable: false,
+                    backgroundColor: 'white'
+                } 
+            }
         }
         else if (new RegExp(outlookUrls.join('|')).test(url)) {
             // Open calendar, contacts and tasks in the same window
-            e.preventDefault()
+            // e.preventDefault()
             this.loadURL(url)
             return { action: 'deny' }
         }
         else if (url == "about:blank#blocked") {
             // Do nothing
-            e.preventDefault()
+            // e.preventDefault()
             shell.openExternal("https://teams.microsoft.com/l/meeting/new")
             return { action: 'deny' }
         }
         else {
             // Send everything else to the browser
-            e.preventDefault()
+            // e.preventDefault()
             shell.openExternal(url)
             return { action: 'deny' }
         }
