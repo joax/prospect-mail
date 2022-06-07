@@ -78,6 +78,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="linkIsSelected-"],
+    #Pivot65-Tab0[class*="linkIsSelected-"],
     #Pivot64-Tab0[class*="linkIsSelected-"] {
         height: 35px !important;
         line-height: 35px !important;
@@ -91,6 +92,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="link-"],
+    #Pivot65-Tab1[class*="link-"],
     #Pivot64-Tab1[class*="link-"] {
         height: 35px !important;
         line-height: 35px !important;
@@ -103,6 +105,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="linkIsSelected-"],
+    #Pivot65-Tab1[class*="linkIsSelected-"],
     #Pivot64-Tab1[class*="linkIsSelected-"] {
         height: 35px !important;
         line-height: 35px !important;
@@ -238,6 +241,7 @@ CssInjector.main = `
 
     /* Round corners */
 
+    .AsZHe,
     ._3TShXKcugWppOYRofyKkhd,
     .UF2VcnmkEsU0XfZMxEmg,
     .DLFwpjIOLj0xg9vK7UZW,
@@ -269,6 +273,7 @@ CssInjector.main = `
         border-right: 0px solid transparent !important;
     }
 
+    .UF2Vc,
     .w4T91TVJrRh9QNUdePUM0,
     ._1qPqjoFrRhZTOpwH-IJ2UP {
         border-bottom: 0px solid transparent !important;
@@ -397,6 +402,7 @@ CssInjector.main = `
     ._3A5noZ4y9VM6UYGLFZCTCX,
     .vbF-r-E4avKj8URfLkl17,
     ._PLCODYwkGI1GWyoyefZ,
+    ._PLCO,
     #O365fpcontainerid {
         width: 375px !important;
     }
