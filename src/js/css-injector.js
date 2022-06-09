@@ -120,20 +120,26 @@ CssInjector.main = `
 
     /* Email List */
 
+    .TjgSf,
     .TjgSfjyOrglIakdDSAkb {
         padding-left: 8px;
-        padding-right: 14px !important;
+        padding-right: 5px !important;
     }
 
+    .jA_gmb,
     .jA_gmb4ZADcZTFwdZ3Dv {
         margin-left: 5px;
     }
 
+    .Rl6Tw.SMPjQ,
+    .Rl6Tw.VcZPl,
     .Rl6TwEZKxkhOgLe9cZyj.SMPjQtvPyCguMLsZarDA,
     .Rl6TwEZKxkhOgLe9cZyj.VcZPlm30rNQ92bO1AONm {
         border-left-color: transparent !important;
     }
 
+    .Rl6Tw.SMPjQ::before,
+    .Rl6Tw.VcZPl::before,
     .TjgSfjyOrglIakdDSAkb::before {
         float: left;
         margin-top: 30px;
@@ -146,6 +152,8 @@ CssInjector.main = `
         border-radius: 10px;
     }
 
+    .Rl6Tw.SMPjQ::before,
+    .Rl6Tw.VcZPl::before,
     .Rl6TwEZKxkhOgLe9cZyj.SMPjQtvPyCguMLsZarDA::before,
     .Rl6TwEZKxkhOgLe9cZyj.VcZPlm30rNQ92bO1AONm::before {
         background-color: var(--themeDark);
@@ -215,6 +223,7 @@ CssInjector.main = `
         height: 100% !important;
     } 
     
+    .ms-Persona--size32 .ms-Persona-initials span,
     .ms-Persona--size28 .ms-Persona-initials span {
         line-height: 40px;
         font-size: 16px;
@@ -241,15 +250,35 @@ CssInjector.main = `
 
     /* Round corners */
 
+    .C5f8Z, .npjh4, .AK_my {
+        background-color: var(--fallback-composeNeutralLighterBackground) !important;
+    }
+
     .AsZHe,
     ._3TShXKcugWppOYRofyKkhd,
     .UF2VcnmkEsU0XfZMxEmg,
     .DLFwpjIOLj0xg9vK7UZW,
     ._12R4Y5HY4asDLcTre4Gwl7 {
-        margin: .5em .5em 0 0;
-        background-color: white;
+        background-color: var(--fallback-composeNeutralLighterBackground) !important;
+        margin: 0;
+    }
+
+    .IrLT6 {
+        background: white !important;
+        margin: .5em .5em 0 .5em;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+
+    .YK2pd {
+        margin: .5em 1em 0 .5em;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .u5LM8 {
+        background: var(--fallback-composeNeutralLighterBackground) !important;
+        background-color: var(--fallback-composeNeutralLighterBackground) !important;
     }
 
     .oQNugVUw3c8iisQbidOJ.customScrollBar {
