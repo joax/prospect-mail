@@ -232,19 +232,25 @@ class MailWindowController {
             // Open calendar, contacts and tasks in the same window
             // e.preventDefault()
             this.loadURL(url)
-            return { action: 'deny' }
+            .then(() => {
+                return { action: 'deny' }
+            })
         }
         else if (url == "about:blank#blocked") {
             // Do nothing
             // e.preventDefault()
             shell.openExternal("https://teams.microsoft.com/l/meeting/new")
-            return { action: 'deny' }
+            .then(() => {
+                return { action: 'deny' }
+            })
         }
         else {
             // Send everything else to the browser
             // e.preventDefault()
             shell.openExternal(url)
-            return { action: 'deny' }
+            .then(() => {
+                return { action: 'deny' }
+            })
         }
     }
 
