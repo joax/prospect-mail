@@ -66,6 +66,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="link-"],
+    #Pivot68-Tab0[class*="link-"],
     #Pivot65-Tab0[class*="link-"],
     #Pivot64-Tab0[class*="link-"] {
         height: 35px !important;
@@ -78,6 +79,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="linkIsSelected-"],
+    #Pivot68-Tab0[class*="linkIsSelected-"],
     #Pivot65-Tab0[class*="linkIsSelected-"],
     #Pivot64-Tab0[class*="linkIsSelected-"] {
         height: 35px !important;
@@ -92,6 +94,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="link-"],
+    #Pivot68-Tab1[class*="link-"],
     #Pivot65-Tab1[class*="link-"],
     #Pivot64-Tab1[class*="link-"] {
         height: 35px !important;
@@ -105,6 +108,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="linkIsSelected-"],
+    #Pivot68-Tab1[class*="linkIsSelected-"],
     #Pivot65-Tab1[class*="linkIsSelected-"],
     #Pivot64-Tab1[class*="linkIsSelected-"] {
         height: 35px !important;
