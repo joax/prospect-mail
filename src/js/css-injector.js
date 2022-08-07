@@ -52,6 +52,10 @@ CssInjector.main = `
         border-radius: 5px;
     }
 
+    .Uon3I.kezMk {
+        border-radius: 20px;
+    }
+
     /* Buttons */
 
     .sk6qASJKOxQFRq25P0yZ,
@@ -123,6 +127,11 @@ CssInjector.main = `
     }
 
     /* Email List */
+
+
+    .UF2Vc {
+        padding: .3em 0 .5em 0 !important;
+    }
 
     .TjgSf,
     .TjgSfjyOrglIakdDSAkb {
