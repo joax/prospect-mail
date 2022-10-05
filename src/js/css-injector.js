@@ -26,6 +26,68 @@ CssInjector.main = `
 
     div[role="treeitem"]:not(.taskItem) {
         max-height: 28px !important;
+        border-radius: 20px !important;
+    }
+
+    /* New Ribbon Bar */
+
+    /* Hide Top Bar (not necessary) */
+    #TopBar {
+        display: none !important;
+    }
+
+    .HIqgw,
+    .S0ujU.Iqhuk,
+    .M_aTh.Iqhuk {
+        background-color: var(--neutralLighter) !important;
+        border-bottom: 0px solid transparent !important;
+    }
+
+    .Z3Zqz {
+        align-self: center !important;
+        padding: 4px !important;
+    }
+
+    .HIqgw.n0tDR {
+        height: 55px !important;
+    }
+
+    #appshycomponent {
+        padding: 10px !important;
+    }
+
+    #outerRibbonContainer {
+        border-radius: 10px !important;
+        box-shadow: none !important;
+    }
+
+    /* Notifications */
+
+    .SVsoK {
+        box-shadow: none !important;
+        border: 1px solid var(--neutralLighter) !important;
+    }
+
+    .IU6B5.css-333 {
+        border-radius: 10px !important;
+    }
+
+    .SVsoK:hover {
+        background-color: var(--neutralLighter) !important;
+    }
+
+    .rccX6 {
+        margin-left: 20px !important;
+    }
+
+    .IU6B5 {
+        border-radius: 10px !important;
+        border: 1px solid var(--neutralLighter) !important;
+        box-shadow: 0px 0px 30px var(--neutralLighter) !important;
+    }
+
+    .X9d5J.RdwI5 {
+        right: 376px !important;
     }
 
     /* Search Bar */
@@ -56,6 +118,10 @@ CssInjector.main = `
         border-radius: 20px;
     }
 
+    .Uon3I.NQ_Mj.VuLGw {
+        
+    }
+
     /* Buttons */
 
     .sk6qASJKOxQFRq25P0yZ,
@@ -64,12 +130,12 @@ CssInjector.main = `
         border-radius: 5px !important;
     }
 
-
     [class*="linkIsSelected-"]::before {
         background-color: transparent !important;
     }
 
     #time-panel-pivot-Calendar[class*="link-"],
+    #Pivot50-Tab0[class*="link-"],
     #Pivot68-Tab0[class*="link-"],
     #Pivot65-Tab0[class*="link-"],
     #Pivot64-Tab0[class*="link-"] {
@@ -83,6 +149,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="linkIsSelected-"],
+    #Pivot50-Tab0[class*="linkIsSelected-"],
     #Pivot68-Tab0[class*="linkIsSelected-"],
     #Pivot65-Tab0[class*="linkIsSelected-"],
     #Pivot64-Tab0[class*="linkIsSelected-"] {
@@ -98,6 +165,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="link-"],
+    #Pivot50-Tab1[class*="link-"],
     #Pivot68-Tab1[class*="link-"],
     #Pivot65-Tab1[class*="link-"],
     #Pivot64-Tab1[class*="link-"] {
@@ -112,6 +180,7 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="linkIsSelected-"],
+    #Pivot50-Tab1[class*="linkIsSelected-"],
     #Pivot68-Tab1[class*="linkIsSelected-"],
     #Pivot65-Tab1[class*="linkIsSelected-"],
     #Pivot64-Tab1[class*="linkIsSelected-"] {
@@ -128,6 +197,10 @@ CssInjector.main = `
 
     /* Email List */
 
+    .PuIN6 {
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+    }
 
     .UF2Vc {
         padding: .3em 0 .5em 0 !important;
@@ -261,10 +334,6 @@ CssInjector.main = `
         line-height: 1.3 !important;
     }
 
-    .YE9Rk {
-        padding-top: 1em !important;
-    }
-
     .uLemZ,
     .YE9Rk,
     .BW6l9,
@@ -310,7 +379,7 @@ CssInjector.main = `
     }
 
     .YK2pd {
-        margin: .5em 1em 0 .5em;
+        margin: .5em 1em 0 1em;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -382,7 +451,7 @@ CssInjector.main = `
     /* Emails */
 
     .wide-content-host {
-        padding: 0.5em;
+        padding: 0em;
     }
 
     .TiApU,
@@ -393,6 +462,19 @@ CssInjector.main = `
     .dH5cL.xq5GW {
         margin: 0 !important;
         padding: .5em !important;
+    }
+
+    .jblWR, 
+    .QQC3U {
+        border: 1px solid white !important;
+        width: calc(100% - 26px) !important;
+        padding: 0px 10 !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .dH5cL.xq5GW {
+        border: 0px solid white !important;
     }
 
     /* Composing emails */
