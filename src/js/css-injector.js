@@ -40,7 +40,7 @@ CssInjector.main = `
     .UAnq8,
     .S0ujU.Iqhuk,
     .M_aTh.Iqhuk {
-        background-color: var(--neutralLighter) !important;
+        background-color: var(--neutralLighterAlt) !important;
         border-bottom: 0px solid transparent !important;
     }
 
@@ -51,7 +51,8 @@ CssInjector.main = `
     }
 
     .UAnq8.QpyM8 {
-        height: 64px !important;
+        height: 55px !important;
+        padding-top: 10px !important;
     }
 
     #appshycomponent {
