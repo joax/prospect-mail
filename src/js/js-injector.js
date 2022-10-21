@@ -42,13 +42,15 @@ setTimeout(() => {
 
 JsInjector.main = `
 setTimeout(() => {
-    let unreadSpan = document.querySelector('.rh6W3beKQeO3YL0Rsylg');
-    require('electron').ipcRenderer.send('updateUnread', unreadSpan.hasChildNodes());
+    let unreadSpan = document.querySelector('.o03Ce');
+    window.api.send('updateUnread', unreadSpan.hasChildNodes());
+
+    console.log('Here we go');
 
     let observer = new MutationObserver(mutations => {
         mutations.forEach(mutation => {
             console.log('Observer Changed.');
-            require('electron').ipcRenderer.send('updateUnread', unreadSpan.hasChildNodes());
+            window.api.send('updateUnread', unreadSpan.hasChildNodes());
 
             // Scrape messages and pop up a notification
             var messages = document.querySelectorAll('div[aria-label="Message list"] [role="listbox"]');
@@ -75,7 +77,7 @@ setTimeout(() => {
                     };
 
                     // Show system notification
-                    require('electron').ipcRenderer.send('unread-messages-notification', notification);
+                    window.api.send('unread-messages-notification', notification);
                 }
             }
         });
@@ -91,7 +93,7 @@ setTimeout(() => {
         mutations.forEach(mutation => {
             if (reminders[0].clientHeight > height)
             {
-                require('electron').ipcRenderer.send('show');
+                window.api.send('show');
             }
             height = reminders[0].clientHeight;
         });
@@ -105,7 +107,7 @@ setTimeout(() => {
     $("#owaMeetNowButton").unbind();
     $("#owaMeetNowButton").on("click", (e) => {
         e.preventDefault();
-        require("electron").ipcRenderer.send('schedule-teams')
+        window.api.send('schedule-teams')
     })
     
 

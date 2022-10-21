@@ -44,8 +44,9 @@ class MailWindowController {
                 devTools: true,
                 spellcheck: true,
                 nativeWindowOpen: true,
-                nodeIntegration: true,
-                contextIsolation: false,
+                nodeIntegration: false,
+                contextIsolation: true,
+                preload: path.join(__dirname, "../preload.js"),
                 backgroundColor: 'white',
                 affinity: 'main-window'
             }
@@ -157,7 +158,6 @@ class MailWindowController {
             // insert styles
             childWindow.webContents.on('dom-ready', () => {
                 childWindow.webContents.insertCSS(CssInjector.main)
-
                 let that = this
                 if (!showWindowFrame) {
                     childWindow.webContents.insertCSS(CssInjector.noFrame)
