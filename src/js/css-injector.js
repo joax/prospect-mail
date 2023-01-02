@@ -132,8 +132,13 @@ CssInjector.main = `
         border-radius: 20px;
     }
 
-    .Uon3I.NQ_Mj.VuLGw {
-        
+    .OVIE8.ou4TM {
+        -ms-overflow-style: none;   /* Internet Explorer 10+ */
+        scrollbar-width: none;      /* Firefox */
+    }
+
+    .OVIE8.ou4TM::-webkit-scrollbar { 
+        display: none;              /* Safari and Chrome */
     }
 
     /* Buttons */
@@ -772,6 +777,11 @@ CssInjector.noFrame = `
 
     .ms-SearchBox {
         -webkit-app-region: no-drag;
+    }
+
+    /* Popups Titlebars */
+    .LaXjW {
+        -webkit-app-region: drag;
     }
 
     /* make the clickable component in header not dragable */

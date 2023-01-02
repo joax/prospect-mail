@@ -126,6 +126,7 @@ class MailWindowController {
             this.win.webContents.insertCSS(CssInjector.main)
             let that = this
             if (!showWindowFrame) {
+                console.log('Injecting NoFrame CSS')
                 let a = this.win.webContents.insertCSS(CssInjector.noFrame)
                 a.then(() => {
                     // Add unread Messages Notification reader
