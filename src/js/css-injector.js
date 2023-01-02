@@ -149,7 +149,17 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="link-"],
+    #Pivot11-Tab0[class*="link-"],
     #Pivot50-Tab0[class*="link-"],
+    #Pivot51-Tab0[class*="link-"],
+    #Pivot52-Tab0[class*="link-"],
+    #Pivot53-Tab0[class*="link-"],
+    #Pivot54-Tab0[class*="link-"],
+    #Pivot55-Tab0[class*="link-"],
+    #Pivot56-Tab0[class*="link-"],
+    #Pivot57-Tab0[class*="link-"],
+    #Pivot58-Tab0[class*="link-"],
+    #Pivot59-Tab0[class*="link-"],
     #Pivot68-Tab0[class*="link-"],
     #Pivot65-Tab0[class*="link-"],
     #Pivot64-Tab0[class*="link-"] {
@@ -163,7 +173,17 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Calendar[class*="linkIsSelected-"],
+    #Pivot11-Tab0[class*="linkIsSelected-"],
     #Pivot50-Tab0[class*="linkIsSelected-"],
+    #Pivot51-Tab0[class*="linkIsSelected-"],
+    #Pivot52-Tab0[class*="linkIsSelected-"],
+    #Pivot53-Tab0[class*="linkIsSelected-"],
+    #Pivot54-Tab0[class*="linkIsSelected-"],
+    #Pivot55-Tab0[class*="linkIsSelected-"],
+    #Pivot56-Tab0[class*="linkIsSelected-"],
+    #Pivot57-Tab0[class*="linkIsSelected-"],
+    #Pivot58-Tab0[class*="linkIsSelected-"],
+    #Pivot59-Tab0[class*="linkIsSelected-"],
     #Pivot68-Tab0[class*="linkIsSelected-"],
     #Pivot65-Tab0[class*="linkIsSelected-"],
     #Pivot64-Tab0[class*="linkIsSelected-"] {
@@ -179,7 +199,17 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="link-"],
+    #Pivot11-Tab1[class*="link-"],
     #Pivot50-Tab1[class*="link-"],
+    #Pivot51-Tab1[class*="link-"],
+    #Pivot52-Tab1[class*="link-"],
+    #Pivot53-Tab1[class*="link-"],
+    #Pivot54-Tab1[class*="link-"],
+    #Pivot55-Tab1[class*="link-"],
+    #Pivot56-Tab1[class*="link-"],
+    #Pivot57-Tab1[class*="link-"],
+    #Pivot58-Tab1[class*="link-"],
+    #Pivot59-Tab1[class*="link-"],
     #Pivot68-Tab1[class*="link-"],
     #Pivot65-Tab1[class*="link-"],
     #Pivot64-Tab1[class*="link-"] {
@@ -194,7 +224,17 @@ CssInjector.main = `
     }
 
     #time-panel-pivot-Tasks[class*="linkIsSelected-"],
+    #Pivot11-Tab1[class*="linkIsSelected-"],
     #Pivot50-Tab1[class*="linkIsSelected-"],
+    #Pivot51-Tab1[class*="linkIsSelected-"],
+    #Pivot52-Tab1[class*="linkIsSelected-"],
+    #Pivot53-Tab1[class*="linkIsSelected-"],
+    #Pivot54-Tab1[class*="linkIsSelected-"],
+    #Pivot55-Tab1[class*="linkIsSelected-"],
+    #Pivot56-Tab1[class*="linkIsSelected-"],
+    #Pivot57-Tab1[class*="linkIsSelected-"],
+    #Pivot58-Tab1[class*="linkIsSelected-"],
+    #Pivot59-Tab1[class*="linkIsSelected-"],
     #Pivot68-Tab1[class*="linkIsSelected-"],
     #Pivot65-Tab1[class*="linkIsSelected-"],
     #Pivot64-Tab1[class*="linkIsSelected-"] {
@@ -207,6 +247,16 @@ CssInjector.main = `
         border: 1px solid #F0F0F0 !important;
         z-index: 20 !important;
         margin-left: -2.4em !important;
+    }
+
+    /* Dialog Boxes */
+
+    .p__My .ms-Dialog-main {
+        border-radius: 10px;
+    }
+
+    .ms-Dialog button {
+        border-radius: 5px !important;
     }
 
     /* Email List */
